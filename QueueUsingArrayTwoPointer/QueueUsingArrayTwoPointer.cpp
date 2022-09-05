@@ -108,5 +108,9 @@ int main()
 	dequeue(&q);
 	cout << "after deletion " << endl;
 	display(&q);
+	enqueue(&q, 40);//eventhough the queue is empty we can't occupy that space 
+
+	//here the queue is empty as well as full condition satisfies resetting pointer and circular 
+	//queue to overcome this.
 
 }
